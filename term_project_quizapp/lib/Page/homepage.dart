@@ -48,14 +48,51 @@ class _HomePageState extends State<HomePage> {
           children: <Widget>[
             Expanded(
                 child: GridView.count(
+              padding: const EdgeInsets.all(5),
               scrollDirection: Axis.vertical,
               mainAxisSpacing: 10,
               crossAxisSpacing: 10,
               crossAxisCount: 2,
               children: <Widget>[
                 Container(
+                  padding: const EdgeInsets.all(5),
                   alignment: Alignment.center,
-                  color: Colors.red,
+                  decoration: BoxDecoration(
+                    color: Colors.red,
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: const [
+                        BoxShadow(
+                          color: Colors.black12,
+                          blurRadius: 5,
+                        ),]
+                  ),
+                  child: InkWell(
+                    onTap: () {},
+                    child: const Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Column(
+                        children: <Widget>[
+                          Icon(
+                            Icons.pets,
+                            size: 150,
+                            color: Colors.amberAccent,
+                          ),
+                          Text(
+                            'หมวดสัตว์โลก',
+                            style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold,fontStyle: FontStyle.italic),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  padding: const EdgeInsets.all(5),
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    color: Colors.purple,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
                   child: InkWell(
                     onTap: () {},
                   ),
@@ -63,7 +100,10 @@ class _HomePageState extends State<HomePage> {
                 Container(
                   padding: const EdgeInsets.all(5),
                   alignment: Alignment.center,
-                  color: Colors.green,
+                  decoration: BoxDecoration(
+                    color: Colors.green,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
                   child: InkWell(
                     onTap: () {},
                   ),
@@ -71,7 +111,10 @@ class _HomePageState extends State<HomePage> {
                 Container(
                   padding: const EdgeInsets.all(5),
                   alignment: Alignment.center,
-                  color: Colors.blue,
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
                   child: InkWell(
                     onTap: () {},
                   ),
@@ -79,7 +122,10 @@ class _HomePageState extends State<HomePage> {
                 Container(
                   padding: const EdgeInsets.all(5),
                   alignment: Alignment.center,
-                  color: Colors.yellow,
+                  decoration: BoxDecoration(
+                    color: Colors.yellow,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
                   child: InkWell(
                     onTap: () {},
                   ),
@@ -87,15 +133,10 @@ class _HomePageState extends State<HomePage> {
                 Container(
                   padding: const EdgeInsets.all(5),
                   alignment: Alignment.center,
-                  color: Colors.pink,
-                  child: InkWell(
-                    onTap: () {},
+                  decoration: BoxDecoration(
+                    color: Colors.pink,
+                    borderRadius: BorderRadius.circular(20),
                   ),
-                ),
-                Container(
-                  padding: const EdgeInsets.all(5),
-                  alignment: Alignment.center,
-                  color: Colors.purple,
                   child: InkWell(
                     onTap: () {},
                   ),
