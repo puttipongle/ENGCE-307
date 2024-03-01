@@ -43,44 +43,62 @@ class _HomePageState extends State<HomePage> {
         title: const Text('Quiz App'),
       ),
       body: Padding(
-        padding: EdgeInsets.all(5),
+        padding: const EdgeInsets.all(10),
         child: Column(
           children: <Widget>[
             Expanded(
                 child: GridView.count(
               scrollDirection: Axis.vertical,
+              mainAxisSpacing: 10,
+              crossAxisSpacing: 10,
               crossAxisCount: 2,
-              padding: EdgeInsets.all(10),
               children: <Widget>[
                 Container(
                   alignment: Alignment.center,
                   color: Colors.red,
-                  child: Text('Hello1'),
+                  child: InkWell(
+                    onTap: () {},
+                  ),
                 ),
                 Container(
+                  padding: const EdgeInsets.all(5),
                   alignment: Alignment.center,
                   color: Colors.green,
-                  child: Text('Hello2'),
+                  child: InkWell(
+                    onTap: () {},
+                  ),
                 ),
                 Container(
+                  padding: const EdgeInsets.all(5),
                   alignment: Alignment.center,
                   color: Colors.blue,
-                  child: Text('Hello3'),
+                  child: InkWell(
+                    onTap: () {},
+                  ),
                 ),
                 Container(
+                  padding: const EdgeInsets.all(5),
                   alignment: Alignment.center,
                   color: Colors.yellow,
-                  child: Text('Hello4'),
+                  child: InkWell(
+                    onTap: () {},
+                  ),
                 ),
                 Container(
+                  padding: const EdgeInsets.all(5),
                   alignment: Alignment.center,
                   color: Colors.pink,
-                  child: Text('Hello5'),
+                  child: InkWell(
+                    onTap: () {},
+                  ),
                 ),
                 Container(
+                  padding: const EdgeInsets.all(5),
                   alignment: Alignment.center,
                   color: Colors.purple,
-                  child: Text('Hello6'),
+                  child: InkWell(
+                    onTap: () {},
+                  ),
                 ),
               ],
             )),
