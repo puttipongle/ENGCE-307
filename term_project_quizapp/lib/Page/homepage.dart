@@ -95,6 +95,22 @@ class _HomePageState extends State<HomePage> {
                   ),
                   child: InkWell(
                     onTap: () {},
+                    child: const Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Column(
+                        children: <Widget>[
+                          Icon(
+                            Icons.pets,
+                            size: 150,
+                            color: Colors.amberAccent,
+                          ),
+                          Text(
+                            'หมวดสัตว์โลก',
+                            style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold,fontStyle: FontStyle.italic),
+                          )
+                        ],
+                      ),
+                    ),
                   ),
                 ),
                 Container(
@@ -106,6 +122,22 @@ class _HomePageState extends State<HomePage> {
                   ),
                   child: InkWell(
                     onTap: () {},
+                    child: const Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Column(
+                        children: <Widget>[
+                          Icon(
+                            Icons.pets,
+                            size: 150,
+                            color: Colors.amberAccent,
+                          ),
+                          Text(
+                            'หมวดสัตว์โลก',
+                            style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold,fontStyle: FontStyle.italic),
+                          )
+                        ],
+                      ),
+                    ),
                   ),
                 ),
                 Container(
@@ -117,6 +149,22 @@ class _HomePageState extends State<HomePage> {
                   ),
                   child: InkWell(
                     onTap: () {},
+                    child: const Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Column(
+                        children: <Widget>[
+                          Icon(
+                            Icons.pets,
+                            size: 150,
+                            color: Colors.amberAccent,
+                          ),
+                          Text(
+                            'หมวดสัตว์โลก',
+                            style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold,fontStyle: FontStyle.italic),
+                          )
+                        ],
+                      ),
+                    ),
                   ),
                 ),
                 Container(
@@ -128,6 +176,22 @@ class _HomePageState extends State<HomePage> {
                   ),
                   child: InkWell(
                     onTap: () {},
+                    child: const Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Column(
+                        children: <Widget>[
+                          Icon(
+                            Icons.pets,
+                            size: 150,
+                            color: Colors.green,
+                          ),
+                          Text(
+                            'หมวดสัตว์โลก',
+                            style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold,fontStyle: FontStyle.italic),
+                          )
+                        ],
+                      ),
+                    ),
                   ),
                 ),
                 Container(
@@ -139,6 +203,22 @@ class _HomePageState extends State<HomePage> {
                   ),
                   child: InkWell(
                     onTap: () {},
+                    child: const Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Column(
+                        children: <Widget>[
+                          Icon(
+                            Icons.pets,
+                            size: 150,
+                            color: Colors.amberAccent,
+                          ),
+                          Text(
+                            'หมวดสัตว์โลก',
+                            style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold,fontStyle: FontStyle.italic),
+                          )
+                        ],
+                      ),
+                    ),
                   ),
                 ),
               ],
