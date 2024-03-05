@@ -1,5 +1,6 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
@@ -28,7 +29,7 @@ class _HomePageState extends State<HomePage> {
   ];
 
   static const colorizeTextStyle = TextStyle(
-    fontSize: 40.0,
+    fontSize: 30.0,
     fontFamily: 'Horizon',
     fontWeight: FontWeight.bold,
   );
@@ -44,7 +45,7 @@ class _HomePageState extends State<HomePage> {
                 Stack(children: <Widget>[
                   Container(
                     height: 200,
-                    padding: EdgeInsets.only(left: 20, right: 50),
+                    padding: EdgeInsets.only(left: 30, right: 30, bottom: 20),
                     decoration: BoxDecoration(
                         color: Color(0xFF2a2b31),
                         borderRadius: BorderRadius.only(
@@ -58,10 +59,10 @@ class _HomePageState extends State<HomePage> {
                         children: [
                           AnimatedTextKit(
                             animatedTexts: [
-                              ColorizeAnimatedText('Quiz App',
+                              ColorizeAnimatedText('Welcome to Quiz App',
                                   textStyle: colorizeTextStyle,
                                   colors: colorizeColors,
-                                  textAlign: TextAlign.center),
+                                  ),
                             ],
                             isRepeatingAnimation: true,
                           ),
@@ -116,7 +117,7 @@ class _HomePageState extends State<HomePage> {
                   padding: EdgeInsets.only(left: 20),
                   child: Text(
                     'Quiz Categories',
-                    style: TextStyle(
+                    style: GoogleFonts.lato(
                         color: Colors.black,
                         fontSize: 35,
                         fontWeight: FontWeight.bold),
