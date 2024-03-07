@@ -150,7 +150,10 @@ class _HomePageState extends State<HomePage> {
                             scale: 10,
                           ),
                           InkWell(
-                            onTap: () {},
+                            onTap: () async {
+                            await Navigator.pushNamed(context, '/detail',
+                                arguments: 4);
+                          },
                             child: const Padding(
                               padding: EdgeInsets.all(8.0),
                               child: Column(
@@ -187,7 +190,10 @@ class _HomePageState extends State<HomePage> {
                             scale: 10,
                           ),
                           InkWell(
-                            onTap: () {},
+                            onTap: () async {
+                            await Navigator.pushNamed(context, '/detail',
+                                arguments: 1);
+                          },
                             child: const Padding(
                               padding: EdgeInsets.all(8.0),
                               child: Column(
@@ -224,7 +230,10 @@ class _HomePageState extends State<HomePage> {
                             scale: 10,
                           ),
                           InkWell(
-                            onTap: () {},
+                            onTap: () async {
+                            await Navigator.pushNamed(context, '/detail',
+                                arguments: 5);
+                          },
                             child: const Padding(
                               padding: EdgeInsets.all(8.0),
                               child: Column(
@@ -261,7 +270,10 @@ class _HomePageState extends State<HomePage> {
                             scale: 10,
                           ),
                           InkWell(
-                            onTap: () {},
+                            onTap: () async {
+                            await Navigator.pushNamed(context, '/detail',
+                                arguments: 2);
+                          },
                             child: const Padding(
                               padding: EdgeInsets.all(8.0),
                               child: Column(
@@ -298,7 +310,10 @@ class _HomePageState extends State<HomePage> {
                             scale: 10,
                           ),
                           InkWell(
-                            onTap: () {},
+                            onTap: () async {
+                            await Navigator.pushNamed(context, '/detail',
+                                arguments: 3);
+                          },
                             child: const Padding(
                               padding: EdgeInsets.all(8.0),
                               child: Column(
@@ -335,7 +350,10 @@ class _HomePageState extends State<HomePage> {
                             scale: 10,
                           ),
                           InkWell(
-                            onTap: () {},
+                            onTap: () async {
+                            await Navigator.pushNamed(context, '/detail',
+                                arguments: 6);
+                          },
                             child: const Padding(
                               padding: EdgeInsets.all(8.0),
                               child: Column(

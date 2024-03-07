@@ -99,7 +99,7 @@ final pokemon = [
       quest:
           'What is the name of the first Pokemon Professor you encounter in the main series games?',
       options: [
-        const Option(quest: ' Professor Birch', iscorrect: false),
+        const Option(quest: 'Professor Birch', iscorrect: false),
         const Option(quest: 'Professor Oak', iscorrect: true),
         const Option(quest: 'Professor Sycamore', iscorrect: false),
         const Option(quest: 'Professor Elm ', iscorrect: false),

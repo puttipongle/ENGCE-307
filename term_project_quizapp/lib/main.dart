@@ -1,6 +1,7 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:term_project_quizapp/Page/homepage.dart';
+import 'package:term_project_quizapp/Page/questionspage.dart';
 
 void main() {
   runApp(
@@ -26,14 +27,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         '/': (context) => const HomePage(),
-        // '/detail': (context) => Page2(
-        //       id: null,
-        //       name: '',
-        //       age: '',
-        //       img: '',
-        //       like: null,
-        //     )
-        //name: null, element: null, like: null, img: null
+        '/detail': (context) => qpage()
       },
     );
   }
