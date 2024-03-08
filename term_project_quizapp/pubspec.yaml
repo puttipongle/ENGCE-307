@@ -76,6 +76,7 @@ flutter:
     - assets/images/pokemon.png
     - assets/images/yugioh.png
     - assets/images/hsr.png
+    - assets/images/award.png
     - assets/iconapp/icon_app.png
 
   # An image asset can refer to one or more resolution-specific "variants", see

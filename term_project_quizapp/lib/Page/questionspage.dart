@@ -279,6 +279,15 @@ class ResultPage extends StatelessWidget {
           const SizedBox(
             width: 1000,
           ),
+          Text('Congratulations',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+          const SizedBox(
+            height: 20,
+          ),
+          Image.asset(
+            'assets/images/award.png',
+            scale: 10,
+          ),
           const Text(
             'Your Score',
             style: TextStyle(fontSize: 34, fontWeight: FontWeight.bold),
