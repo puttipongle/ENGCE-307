@@ -272,24 +272,58 @@ class ResultPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-          child: Padding(
-            padding: const EdgeInsets.all(20),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-            Text('you got $score/${food.length}'),
-            ElevatedButton(
-                onPressed: () async {
-                  await Navigator.pushNamed(
-                    context,
-                    '/',
-                  );
-                },
-                child: Text('Home'))
-                    ],
+      backgroundColor: Color(0xffedf3f6),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          const SizedBox(
+            width: 1000,
+          ),
+          const Text(
+            'Your Score',
+            style: TextStyle(fontSize: 34, fontWeight: FontWeight.bold),
+          ),
+          // Text('you got $score/${food.length}'),
+          Stack(
+            alignment: Alignment.center,
+            children: [
+              SizedBox(
+                height: 250,
+                width: 250,
+                child: CircularProgressIndicator(
+                  strokeWidth: 10,
+                  value: score / 9,
+                  color: Colors.red,
+                  backgroundColor: Colors.black,
+                ),
+              ),
+              Column(
+                children: [
+                  Text(
+                    score.toString(),
+                    style: const TextStyle(fontSize: 80),
                   ),
-          )),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    '${(score / food.length * 100).round()}%',
+                    style: const TextStyle(fontSize: 25),
+                  )
+                ],
+              )
+            ],
+          ),
+          ElevatedButton(
+              onPressed: () async {
+                await Navigator.pushNamed(
+                  context,
+                  '/',
+                );
+              },
+              child: Text('Home'))
+        ],
+      ),
     );
   }
 }

@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         '/': (context) => const HomePage(),
-        '/detail': (context) => qpage()
+        '/QPage': (context) => qpage()
       },
     );
   }

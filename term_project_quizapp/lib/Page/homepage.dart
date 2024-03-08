@@ -59,10 +59,11 @@ class _HomePageState extends State<HomePage> {
                         children: [
                           AnimatedTextKit(
                             animatedTexts: [
-                              ColorizeAnimatedText('Welcome to Quiz App',
-                                  textStyle: colorizeTextStyle,
-                                  colors: colorizeColors,
-                                  ),
+                              ColorizeAnimatedText(
+                                'Welcome to Quiz App',
+                                textStyle: colorizeTextStyle,
+                                colors: colorizeColors,
+                              ),
                             ],
                             isRepeatingAnimation: true,
                           ),
@@ -151,9 +152,9 @@ class _HomePageState extends State<HomePage> {
                           ),
                           InkWell(
                             onTap: () async {
-                            await Navigator.pushNamed(context, '/detail',
-                                arguments: 4);
-                          },
+                              await Navigator.pushNamed(context, '/QPage',
+                                  arguments: 4);
+                            },
                             child: const Padding(
                               padding: EdgeInsets.all(8.0),
                               child: Column(
@@ -191,9 +192,9 @@ class _HomePageState extends State<HomePage> {
                           ),
                           InkWell(
                             onTap: () async {
-                            await Navigator.pushNamed(context, '/detail',
-                                arguments: 1);
-                          },
+                              await Navigator.pushNamed(context, '/QPage',
+                                  arguments: 1);
+                            },
                             child: const Padding(
                               padding: EdgeInsets.all(8.0),
                               child: Column(
@@ -231,9 +232,9 @@ class _HomePageState extends State<HomePage> {
                           ),
                           InkWell(
                             onTap: () async {
-                            await Navigator.pushNamed(context, '/detail',
-                                arguments: 5);
-                          },
+                              await Navigator.pushNamed(context, '/QPage',
+                                  arguments: 5);
+                            },
                             child: const Padding(
                               padding: EdgeInsets.all(8.0),
                               child: Column(
@@ -271,9 +272,9 @@ class _HomePageState extends State<HomePage> {
                           ),
                           InkWell(
                             onTap: () async {
-                            await Navigator.pushNamed(context, '/detail',
-                                arguments: 2);
-                          },
+                              await Navigator.pushNamed(context, '/QPage',
+                                  arguments: 2);
+                            },
                             child: const Padding(
                               padding: EdgeInsets.all(8.0),
                               child: Column(
@@ -311,9 +312,9 @@ class _HomePageState extends State<HomePage> {
                           ),
                           InkWell(
                             onTap: () async {
-                            await Navigator.pushNamed(context, '/detail',
-                                arguments: 3);
-                          },
+                              await Navigator.pushNamed(context, '/QPage',
+                                  arguments: 3);
+                            },
                             child: const Padding(
                               padding: EdgeInsets.all(8.0),
                               child: Column(
@@ -351,9 +352,9 @@ class _HomePageState extends State<HomePage> {
                           ),
                           InkWell(
                             onTap: () async {
-                            await Navigator.pushNamed(context, '/detail',
-                                arguments: 6);
-                          },
+                              await Navigator.pushNamed(context, '/QPage',
+                                  arguments: 6);
+                            },
                             child: const Padding(
                               padding: EdgeInsets.all(8.0),
                               child: Column(
