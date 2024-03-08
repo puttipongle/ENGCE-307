@@ -300,6 +300,7 @@ class ResultPage extends StatelessWidget {
                       fontSize: 35,
                       fontWeight: FontWeight.bold)),
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset(
                     'assets/images/Star.png',
@@ -328,7 +329,7 @@ class ResultPage extends StatelessWidget {
                     width: 250,
                     child: CircularProgressIndicator(
                       strokeWidth: 10,
-                      value: score / 9,
+                      value: score / 9, 
                       color: Colors.red,
                       backgroundColor: Colors.black,
                     ),
@@ -342,10 +343,10 @@ class ResultPage extends StatelessWidget {
                       const SizedBox(
                         height: 10,
                       ),
-                      Text(
-                        '${(score / food.length * 100).round()}%',
-                        style: const TextStyle(fontSize: 25),
-                      )
+                      // Text(
+                      //   '${(score / food.length * 100).round()}%',
+                      //   style: const TextStyle(fontSize: 25),
+                      // )
                     ],
                   )
                 ],
@@ -357,7 +358,7 @@ class ResultPage extends StatelessWidget {
                       '/',
                     );
                   },
-                  child: Text('Home'))
+                  child: Icon(Icons.home, color: Colors.black,)),
             ],
           ),
         ),
