@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:term_project_quizapp/Model/model.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class qpage extends StatefulWidget {
   int? suit;
@@ -273,65 +274,93 @@ class ResultPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xffedf3f6),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          const SizedBox(
-            width: 1000,
-          ),
-          Text('Congratulations',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-          const SizedBox(
-            height: 20,
-          ),
-          Image.asset(
-            'assets/images/award.png',
-            scale: 10,
-          ),
-          const Text(
-            'Your Score',
-            style: TextStyle(fontSize: 34, fontWeight: FontWeight.bold),
-          ),
-          // Text('you got $score/${food.length}'),
-          Stack(
-            alignment: Alignment.center,
-            children: [
-              SizedBox(
-                height: 250,
-                width: 250,
-                child: CircularProgressIndicator(
-                  strokeWidth: 10,
-                  value: score / 9,
-                  color: Colors.red,
-                  backgroundColor: Colors.black,
+      body: Padding(
+        padding: const EdgeInsets.all(20),
+        child: Container(
+          alignment: Alignment.center,
+          width: MediaQuery.of(context).size.width,
+          decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(30),
+              boxShadow: const [
+                BoxShadow(
+                  color: Colors.black12,
+                  blurRadius: 7,
                 ),
+              ]),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              const SizedBox(
+                width: 1000,
               ),
-              Column(
+              Text('Congratulations',
+                  style: GoogleFonts.lato(
+                      color: Colors.black,
+                      fontSize: 35,
+                      fontWeight: FontWeight.bold)),
+              Row(
                 children: [
-                  Text(
-                    score.toString(),
-                    style: const TextStyle(fontSize: 80),
+                  Image.asset(
+                    'assets/images/Star.png',
+                    scale: 13,
                   ),
-                  const SizedBox(
-                    height: 10,
+                  Image.asset(
+                    'assets/images/award.png',
+                    scale: 8,
                   ),
-                  Text(
-                    '${(score / food.length * 100).round()}%',
-                    style: const TextStyle(fontSize: 25),
+                  Image.asset(
+                    'assets/images/Star.png',
+                    scale: 13,
+                  ),
+                ],
+              ),
+              const Text(
+                'Your Score',
+                style: TextStyle(fontSize: 34, fontWeight: FontWeight.bold),
+              ),
+              // Text('you got $score/${food.length}'),
+              Stack(
+                alignment: Alignment.center,
+                children: [
+                  SizedBox(
+                    height: 250,
+                    width: 250,
+                    child: CircularProgressIndicator(
+                      strokeWidth: 10,
+                      value: score / 9,
+                      color: Colors.red,
+                      backgroundColor: Colors.black,
+                    ),
+                  ),
+                  Column(
+                    children: [
+                      Text(
+                        score.toString(),
+                        style: const TextStyle(fontSize: 80),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        '${(score / food.length * 100).round()}%',
+                        style: const TextStyle(fontSize: 25),
+                      )
+                    ],
                   )
                 ],
-              )
+              ),
+              ElevatedButton(
+                  onPressed: () async {
+                    await Navigator.pushNamed(
+                      context,
+                      '/',
+                    );
+                  },
+                  child: Text('Home'))
             ],
           ),
-          ElevatedButton(
-              onPressed: () async {
-                await Navigator.pushNamed(
-                  context,
-                  '/',
-                );
-              },
-              child: Text('Home'))
-        ],
+        ),
       ),
     );
   }
