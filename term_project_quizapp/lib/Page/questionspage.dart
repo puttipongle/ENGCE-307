@@ -29,6 +29,7 @@ class _DetailPageState extends State<qpage> {
     setState(() {});
 
     return Scaffold(
+      backgroundColor: Color(0xffedf3f6),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Center(
@@ -36,9 +37,15 @@ class _DetailPageState extends State<qpage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               const SizedBox(
-                height: 32,
+                height: 20,
               ),
-              Text('Question $_qusetionNumber/${pokemon.length}'),
+              Text(
+                'Question $_qusetionNumber/${pokemon.length}',
+                style: GoogleFonts.lato(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold),
+              ),
               const Divider(
                 thickness: 1,
                 color: Colors.grey,
@@ -123,7 +130,7 @@ class _DetailPageState extends State<qpage> {
         if (question.img != null) ...[
           Expanded(
             child: Container(
-              height: 200,
+              height: MediaQuery.of(context).size.height,
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: NetworkImage("${question.img}"),
@@ -132,18 +139,22 @@ class _DetailPageState extends State<qpage> {
               ),
             ),
           ),
+          SizedBox(height: 20),
           Text(
             question.quest,
-            style: const TextStyle(fontSize: 25),
+            style: GoogleFonts.lato(
+                color: Colors.black, fontSize: 25, fontWeight: FontWeight.bold),
           ),
         ] else ...[
+          SizedBox(height: 20),
           Text(
             question.quest,
-            style: const TextStyle(fontSize: 25),
+            style: GoogleFonts.lato(
+                color: Colors.black, fontSize: 25, fontWeight: FontWeight.bold),
           ),
         ],
         const SizedBox(
-          height: 32,
+          height: 20,
         ),
         Expanded(
           child: OptionsWidget(
@@ -188,7 +199,10 @@ class _DetailPageState extends State<qpage> {
           }
         },
         child: Text(
-            _qusetionNumber < food.length ? 'Nextpage' : 'See the results'));
+          _qusetionNumber < food.length ? 'Nextpage' : 'See the results',
+          style: GoogleFonts.lato(
+              color: Colors.black, fontWeight: FontWeight.bold),
+        ));
   }
 }
 
@@ -213,13 +227,18 @@ class OptionsWidget extends StatelessWidget {
     return GestureDetector(
       onTap: () => onClickedOption(option),
       child: Container(
-        height: 50,
+        width: MediaQuery.of(context).size.width,
         padding: const EdgeInsets.all(12),
         margin: EdgeInsets.symmetric(vertical: 8),
         decoration: BoxDecoration(
-            color: Colors.red.shade200,
-            borderRadius: BorderRadius.circular(16),
-            border: Border.all(color: color)),
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(20),
+            boxShadow: const [
+              BoxShadow(
+                color: Colors.black12,
+                blurRadius: 7,
+              ),
+            ]),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -329,7 +348,7 @@ class ResultPage extends StatelessWidget {
                     width: 250,
                     child: CircularProgressIndicator(
                       strokeWidth: 10,
-                      value: score / 9, 
+                      value: score / 9,
                       color: Colors.red,
                       backgroundColor: Colors.black,
                     ),
@@ -358,7 +377,10 @@ class ResultPage extends StatelessWidget {
                       '/',
                     );
                   },
-                  child: Icon(Icons.home, color: Colors.black,)),
+                  child: Icon(
+                    Icons.home,
+                    color: Colors.black,
+                  )),
             ],
           ),
         ),
