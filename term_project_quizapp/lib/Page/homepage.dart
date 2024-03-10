@@ -162,9 +162,9 @@ class _HomePageState extends State<HomePage> {
                                   Text(
                                     'Animals',
                                     style: TextStyle(
+                                        color: Colors.black,
                                         fontSize: 25,
-                                        fontWeight: FontWeight.bold,
-                                        fontStyle: FontStyle.italic),
+                                        fontWeight: FontWeight.bold),
                                   )
                                 ],
                               ),
@@ -202,9 +202,9 @@ class _HomePageState extends State<HomePage> {
                                   Text(
                                     'Foods',
                                     style: TextStyle(
+                                        color: Colors.black,
                                         fontSize: 25,
-                                        fontWeight: FontWeight.bold,
-                                        fontStyle: FontStyle.italic),
+                                        fontWeight: FontWeight.bold),
                                   )
                                 ],
                               ),
@@ -242,9 +242,9 @@ class _HomePageState extends State<HomePage> {
                                   Text(
                                     'Fruits',
                                     style: TextStyle(
+                                        color: Colors.black,
                                         fontSize: 25,
-                                        fontWeight: FontWeight.bold,
-                                        fontStyle: FontStyle.italic),
+                                        fontWeight: FontWeight.bold),
                                   )
                                 ],
                               ),
@@ -282,9 +282,9 @@ class _HomePageState extends State<HomePage> {
                                   Text(
                                     'Pokemon',
                                     style: TextStyle(
+                                        color: Colors.black,
                                         fontSize: 25,
-                                        fontWeight: FontWeight.bold,
-                                        fontStyle: FontStyle.italic),
+                                        fontWeight: FontWeight.bold),
                                   )
                                 ],
                               ),
@@ -322,9 +322,9 @@ class _HomePageState extends State<HomePage> {
                                   Text(
                                     'Yu gi OH',
                                     style: TextStyle(
+                                        color: Colors.black,
                                         fontSize: 25,
-                                        fontWeight: FontWeight.bold,
-                                        fontStyle: FontStyle.italic),
+                                        fontWeight: FontWeight.bold),
                                   )
                                 ],
                               ),
@@ -362,9 +362,9 @@ class _HomePageState extends State<HomePage> {
                                   Text(
                                     'H S R',
                                     style: TextStyle(
+                                        color: Colors.black,
                                         fontSize: 25,
-                                        fontWeight: FontWeight.bold,
-                                        fontStyle: FontStyle.italic),
+                                        fontWeight: FontWeight.bold),
                                   )
                                 ],
                               ),
