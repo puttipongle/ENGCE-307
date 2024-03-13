@@ -79,6 +79,36 @@ flutter:
     - assets/images/award.png
     - assets/images/Star.png
     - assets/iconapp/icon_app.png
+    - assets/fruit/Cantaloupe.jpg
+    - assets/fruit/custard_apple.jpg
+    - assets/fruit/Dragonfruit.jpg
+    - assets/fruit/Jackfruit.jpg
+    - assets/fruit/Kiwi.jpg
+    - assets/fruit/melon.jpg
+    - assets/fruit/starfruit.jpg
+    - assets/fruit/tamarind.jpg
+    - assets/fruit/Tangthai.png
+    - assets/fruit/watermelon.jpg
+    - assets/Animal/Clione.jpg
+    - assets/Animal/Hornbill.jpg
+    - assets/Animal/nimo.jpg
+    - assets/pokemon/celebi-gen2.jpg
+    - assets/pokemon/Charizard.png
+    - assets/pokemon/kangaskhan.jpg
+    - assets/Hsr/Acheron.jpg
+    - assets/Hsr/Argenti.jpg
+    - assets/Hsr/Hook.jpg
+    - assets/Hsr/Luocha.jpg
+    - assets/Hsr/Pompom.jpeg
+    - assets/Hsr/qingque.jpg
+    - assets/Hsr/seele.jpg
+    - assets/Hsr/Sparkle.jpg
+    - assets/Hsr/trailblazers.jpg
+    - assets/Hsr/yukong.jpg
+    - assets/yugioh_food/BM.jpg
+    - assets/yugioh_food/BMG.jpg
+    - assets/yugioh_food/porkcut.jpg
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
