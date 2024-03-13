@@ -3,18 +3,18 @@ import 'package:flutter/material.dart';
 import 'package:term_project_quizapp/Page/homepage.dart';
 import 'package:term_project_quizapp/Page/questionspage.dart';
 
-void main() {
-  runApp(
-    DevicePreview(
-      enabled: true,
-      builder: (context) => const MyApp(),
-    ),
-  );
-}
-
 // void main() {
-//   runApp(const MyApp());
+//   runApp(
+//     DevicePreview(
+//       enabled: true,
+//       builder: (context) => const MyApp(),
+//     ),
+//   );
 // }
+
+void main() {
+  runApp(const MyApp());
+}
 
 
 class MyApp extends StatelessWidget {

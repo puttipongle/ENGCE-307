@@ -133,7 +133,7 @@ class _DetailPageState extends State<qpage> {
               height: MediaQuery.of(context).size.height,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: NetworkImage("${question.img}"),
+                  image: AssetImage('${question.img}'),
                   fit: BoxFit.cover,
                 ),
               ),
