@@ -42,14 +42,15 @@ final pokemon = [
     const Option(quest: 'Yvental', iscorrect: false),
   ]),
   Question(
-      quest:
-          'What type of Pokemon is Charizard, the final evolution of the starter Charmander?',
+      quest: 'What type of Pokemon is Charizard?',
       options: [
         const Option(quest: 'Fire/Flying ', iscorrect: true),
         const Option(quest: 'Fire/Dragon', iscorrect: false),
         const Option(quest: 'Fire/Fighting', iscorrect: false),
         const Option(quest: 'Flying/Dragon', iscorrect: false),
-      ]),
+      ],
+      img:
+          'https://cdn.discordapp.com/attachments/1176446034969362464/1215642597993746463/Charizard.png?ex=65fd7e64&is=65eb0964&hm=5a8c0f9c3090715cf738db837b87bb857a0c6ab6d457ff036c8b4cf253b3ca95&'),
   Question(
       quest:
           'What is the name of the region where the Pokemon games Gold, Silver, and Crystal take place?',
@@ -60,14 +61,15 @@ final pokemon = [
         const Option(quest: 'Kalos', iscorrect: false),
       ]),
   Question(
-      quest:
-          'Which of these is a type of Pokeball that offers a higher catch rate than a standard Pokeball?',
+      quest: 'What type of Pokemon?',
       options: [
-        const Option(quest: 'Great Ball ', iscorrect: false),
-        const Option(quest: 'Master Ball  ', iscorrect: true),
-        const Option(quest: 'Ultra Ball ', iscorrect: false),
-        const Option(quest: 'Quick Ball ', iscorrect: false),
-      ]),
+        const Option(quest: 'Fighting  ', iscorrect: false),
+        const Option(quest: 'Normal', iscorrect: true),
+        const Option(quest: 'Fighting /Normal', iscorrect: false),
+        const Option(quest: 'Normal/Fighting ', iscorrect: false),
+      ],
+      img:
+          'https://cdn.discordapp.com/attachments/1176446034969362464/1217362136070754354/kangaskhan.jpg?ex=6603bfd6&is=65f14ad6&hm=b3711637a8c903bb67c139d886f2e5cf39eb906307212d0e200e80b9a2fe9b67&'),
   Question(
       quest:
           'Which of these legendary Pokemon is known as the "Sea Basin Pokemon"? ',
@@ -78,14 +80,15 @@ final pokemon = [
         const Option(quest: 'Milotic ', iscorrect: false),
       ]),
   Question(
-      quest:
-          'What is the name of the region introduced in Pokemon Sun and Moon?',
+      quest: 'What type of Pokemon?',
       options: [
-        const Option(quest: 'Alola', iscorrect: true),
-        const Option(quest: 'Paldea', iscorrect: false),
-        const Option(quest: 'Galar', iscorrect: false),
-        const Option(quest: 'Kalos ', iscorrect: false),
-      ]),
+        const Option(quest: 'Psychic ', iscorrect: false),
+        const Option(quest: 'Psychic /Grass', iscorrect: true),
+        const Option(quest: 'Grass/Psychic ', iscorrect: false),
+        const Option(quest: 'Bug/Grass ', iscorrect: false),
+      ],
+      img:
+          'https://cdn.discordapp.com/attachments/1176446034969362464/1217362135722496080/celebi-gen2.jpg?ex=6603bfd6&is=65f14ad6&hm=3df50a06bc5b3c2e38a55be10dce4202c7623ff8b158c6a38c753d153f04f2f7&'),
   Question(
       quest:
           'Which of these is NOT a type of evolution method in Pokemon besides the standard level-up evolution?',
@@ -99,7 +102,7 @@ final pokemon = [
       quest:
           'What is the name of the first Pokemon Professor you encounter in the main series games?',
       options: [
-        const Option(quest: 'Professor Birch', iscorrect: false),
+        const Option(quest: ' Professor Birch', iscorrect: false),
         const Option(quest: 'Professor Oak', iscorrect: true),
         const Option(quest: 'Professor Sycamore', iscorrect: false),
         const Option(quest: 'Professor Elm ', iscorrect: false),
@@ -158,15 +161,12 @@ final food = [
         const Option(quest: 'Coconut milk ', iscorrect: false),
         const Option(quest: 'Soy milk', iscorrect: true),
       ]),
-  Question(
-      quest:
-          'What is the traditional thickening agent used in gumbo, a stew from the Southern United States? ',
-      options: [
-        const Option(quest: 'Cornstarch ', iscorrect: false),
-        const Option(quest: 'Flour ', iscorrect: false),
-        const Option(quest: 'Rayquaza', iscorrect: false),
-        const Option(quest: 'Roux', iscorrect: true),
-      ]),
+  Question(quest: 'What is Thai national food? ', options: [
+    const Option(quest: 'Lahpet ', iscorrect: false),
+    const Option(quest: 'Chicken Soup ', iscorrect: false),
+    const Option(quest: 'Gado Gado', iscorrect: false),
+    const Option(quest: 'Tom Yam Goong', iscorrect: true),
+  ]),
   Question(
       quest:
           'Which of these is a type of cured meat similar to ham, but typically made from pork shoulder?',
@@ -175,7 +175,9 @@ final food = [
         const Option(quest: 'Bacon', iscorrect: false),
         const Option(quest: 'Prosciutto ', iscorrect: false),
         const Option(quest: 'Pastrami  ', iscorrect: false),
-      ]),
+      ],
+      img:
+          'https://cdn.discordapp.com/attachments/1176446034969362464/1217361583873855548/porkcut.jpg?ex=6603bf53&is=65f14a53&hm=959f672d423cacc0d19a2d13071db1a3a12f5c93e28706a87b2d857de488112a&'),
   Question(
       quest:
           'What is the popular Italian dish made with flat, wide noodles and a tomato-based sauce?',
@@ -238,12 +240,16 @@ final Animal = [
     const Option(quest: '10 second', iscorrect: false),
     const Option(quest: '13 second', iscorrect: true),
   ]),
-  Question(quest: 'What is the name of this creature?', options: [
-    const Option(quest: 'Parrot', iscorrect: false),
-    const Option(quest: 'Hornbill ', iscorrect: true),
-    const Option(quest: 'Swallow', iscorrect: false),
-    const Option(quest: 'Sparrow', iscorrect: true),
-  ]),
+  Question(
+      quest: 'What is the name of this creature?',
+      options: [
+        const Option(quest: 'Parrot', iscorrect: false),
+        const Option(quest: 'Hornbill ', iscorrect: true),
+        const Option(quest: 'Swallow', iscorrect: false),
+        const Option(quest: 'Sparrow', iscorrect: false),
+      ],
+      img:
+          'https://media.discordapp.net/attachments/1176446034969362464/1214774251458924625/Hornbill.jpg?ex=65fa55ae&is=65e7e0ae&hm=382b743e977ceaa71ee6f5c378a872dc8d0449b9a480542cf6f1c55f3c196ffc&=&format=webp&width=346&height=227'),
   Question(quest: 'What bird can fly backward?', options: [
     const Option(quest: 'Sparrow', iscorrect: false),
     const Option(quest: 'Parrot', iscorrect: false),
@@ -335,27 +341,28 @@ final Yugioh = [
     const Option(quest: ' Blue-Eyes White Dragon', iscorrect: false),
   ]),
   Question(
-      quest: 'What is the ultimate goal of a Duel in Yu-Gi-Oh!?',
+      quest: ' What is this?',
       options: [
-        const Option(quest: ' To collect the most cards ', iscorrect: false),
-        const Option(quest: 'To complete a specific puzzle ', iscorrect: false),
-        const Option(
-            quest: 'To reduce your opponent life points to zero',
-            iscorrect: true),
-        const Option(
-            quest: 'To unlock the secrets of the Millennium Items',
-            iscorrect: false),
-      ]),
-  Question(quest: 'How are monsters summoned in Yu-Gi-Oh!?', options: [
-    const Option(
-        quest: ' By discarding cards from your hand', iscorrect: false),
-    const Option(quest: ' By paying a Tribute Summon cost ', iscorrect: true),
-    const Option(quest: 'By sacrificing other monsters', iscorrect: false),
-    const Option(quest: 'By using specific spells or traps', iscorrect: false),
-  ]),
+        const Option(quest: 'Blackmagiciangaru ', iscorrect: false),
+        const Option(quest: 'Black magician girl', iscorrect: false),
+        const Option(quest: 'Black magician', iscorrect: true),
+        const Option(quest: 'Black sword magician', iscorrect: false),
+      ],
+      img:
+          'https://cdn.discordapp.com/attachments/1176446034969362464/1217321077445886032/images.jpg?ex=66039999&is=65f12499&hm=2aa891093d6d95f877d12bcd68b0639284c06009e969f594f41c2388b115ae34&'),
+  Question(
+      quest: 'What is this?',
+      options: [
+        const Option(quest: ' Blackmagiciangaru', iscorrect: false),
+        const Option(quest: ' Black magician girl', iscorrect: true),
+        const Option(quest: 'Magician girl Chocolate', iscorrect: false),
+        const Option(quest: 'Magician girl Berry', iscorrect: false),
+      ],
+      img:
+          'https://cdn.discordapp.com/attachments/1176446034969362464/1217321293876166686/4580590179035-1.jpg?ex=660399cd&is=65f124cd&hm=6c63cd2f433e0906ac01433a86ecbbbc5b87dcc865626d73528d304353252539&'),
   Question(
       quest:
-          'Which of these cards is a Normal Trap Card that negates the activation of an opponent Spell or Trap Card?',
+          'Which of these cards is a couter Trap Card that negates the activation of an opponent Spell or Trap Card?',
       options: [
         const Option(quest: 'Solemn Warning ', iscorrect: true),
         const Option(quest: 'Torrential Tribute ', iscorrect: false),
