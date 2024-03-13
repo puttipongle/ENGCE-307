@@ -1,6 +1,7 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:term_project_quizapp/Model/model.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
@@ -33,6 +34,19 @@ class _HomePageState extends State<HomePage> {
     fontFamily: 'Horizon',
     fontWeight: FontWeight.bold,
   );
+
+  void set() {
+    setState(() {
+      for (var i = 0; i < 10; i++) {
+        pokemon[i].isLocked = false;
+        food[i].isLocked = false;
+        Yugioh[i].isLocked = false;
+        Fruit[i].isLocked = false;
+        Animal[i].isLocked = false;
+        Starrail[i].isLocked = false;
+      }
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -152,6 +166,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                           InkWell(
                             onTap: () async {
+                              set();
                               await Navigator.pushNamed(context, '/QPage',
                                   arguments: 4);
                             },
@@ -192,6 +207,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                           InkWell(
                             onTap: () async {
+                              set();
                               await Navigator.pushNamed(context, '/QPage',
                                   arguments: 1);
                             },
@@ -232,6 +248,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                           InkWell(
                             onTap: () async {
+                              set();
                               await Navigator.pushNamed(context, '/QPage',
                                   arguments: 5);
                             },
@@ -272,6 +289,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                           InkWell(
                             onTap: () async {
+                              set();
                               await Navigator.pushNamed(context, '/QPage',
                                   arguments: 2);
                             },
@@ -312,6 +330,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                           InkWell(
                             onTap: () async {
+                              set();
                               await Navigator.pushNamed(context, '/QPage',
                                   arguments: 3);
                             },
@@ -352,6 +371,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                           InkWell(
                             onTap: () async {
+                              set();
                               await Navigator.pushNamed(context, '/QPage',
                                   arguments: 6);
                             },
