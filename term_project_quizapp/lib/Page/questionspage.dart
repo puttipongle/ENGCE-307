@@ -199,7 +199,7 @@ class _DetailPageState extends State<qpage> {
           }
         },
         child: Text(
-          _qusetionNumber < food.length ? 'Nextpage' : 'See the results',
+          _qusetionNumber < food.length ? 'Next Question' : 'See The Results',
           style: GoogleFonts.lato(
               color: Colors.black, fontWeight: FontWeight.bold),
         ));
